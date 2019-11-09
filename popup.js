@@ -5,10 +5,6 @@ chrome.storage.sync.get('color', function(data) {
   changeColor.setAttribute('value', data.color);
 });
 
-chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-  let url = document.getElementById('url');
-  alert(url);
-});
 
 window.onload = function() {
        //when the document is finished loading, replace everything
