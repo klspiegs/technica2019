@@ -8,6 +8,7 @@ chrome.storage.sync.get('color', function(data) {
 chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
   let url = document.getElementById('url');
   alert(url);
+  document.write(url);
 });
 
 window.onload = function() {
