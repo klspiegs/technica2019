@@ -1,6 +1,11 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <script>
+        chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+        let url = document.getElementById('url');
+        document.getElementById('urilid').innerHTML = url;
+       });
       <style>
         button {
           background-color: #008CBA; 
@@ -12,7 +17,7 @@
     </head>
     <body>
       <p1>Cookie Monsters</p1>
-      <p>"url"</p>
+      <p id = "urlid"></p>
       <button id="reviewButton"></button>
       <button id="analysisButton"></button>
       <script src="popup.js"></script>
