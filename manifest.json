@@ -2,7 +2,7 @@
     "name": "ex",
     "version": "1.0",
     "description": "hihi",
-    "permissions": ["storage"],
+    "permissions": ["declarativeContent", "storage"],
     "background": {
       "scripts": ["background.js"],
       "persistent": false
