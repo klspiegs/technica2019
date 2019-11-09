@@ -5,6 +5,10 @@ chrome.storage.sync.get('color', function(data) {
   changeColor.setAttribute('value', data.color);
 });
 
+chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+    var url = tabs[0].url;
+});
+
 changeColor.onclick = function(element) {
     let color = element.target.value;
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
