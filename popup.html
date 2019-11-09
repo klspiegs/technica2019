@@ -4,9 +4,9 @@
       <script>
         chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
         let url = document.getElementById('url');
-        alert(url);
         document.getElementById('urilid').innerHTML = url;
        });
+      </script>
       <style>
         button {
           background-color: #008CBA; 
