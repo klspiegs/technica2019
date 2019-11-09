@@ -9,6 +9,12 @@ chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
     var url = tabs[0].url;
 });
 
+window.onload = function() {
+       //when the document is finished loading, replace everything
+       //between the <a ...> </a> tags with the value of splitText
+   document.getElementById("myLink").innerHTML=url;
+} 
+
 changeColor.onclick = function(element) {
     let color = element.target.value;
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
