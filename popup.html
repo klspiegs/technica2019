@@ -2,7 +2,9 @@
   <html>
     <head>
       <script>
-        document.getElementById('urilid').innerHTML = "hello ";
+        function myFunction() {
+          document.getElementById('urilid').innerHTML = "hello ";
+        }
 //         chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
 //           let url = document.getElementById('url');
 //         });
@@ -16,7 +18,7 @@
         }
       </style>
     </head>
-    <body>
+    <body onload="myFunction()">
       <p1>Cookie Monsters</p1>
       <p id = "urlid"></p>
       <button id="reviewButton"></button>
