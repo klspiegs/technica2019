@@ -4,16 +4,32 @@
       <style>
         button {
           background-color: #008CBA; 
-          height: 150px;
-          width: 150px;
+          height: 50px;
+          width: 50px;
           outline: none;
+        }
+        body {
+          min-width: 600px; /* your desired width */
+          max-width: 100%;
+          position: relative;
+          vertical-align:middle;
+        }
+        .main-buttons {
+          background-color: #4CAF50; /* Green background */
+          border: 1px solid green; /* Green border */
+          color: white; /* White text */
+          padding: 10px 24px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          float: left; /* Float the buttons side by side */
         }
       </style>
     </head>
     <body>
       <p1>Cookie Monsters</p1>
-      <button id="reviewButton"></button>
-      <button id="analysisButton"></button>
+      <div id="main-buttons">
+        <button id="reviewButton"></button>
+        <button id="analysisButton"></button>
+      </div>
       <script src="popup.js"></script>
     </body>
   </html>
