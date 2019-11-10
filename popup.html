@@ -1,15 +1,6 @@
 <!DOCTYPE html>
   <html>
     <head>
-      <script>
-        function myFunction() {
-          var text = "hello";
-          document.getElementById('urilid').innerHTML = text;
-        }
-//         chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
-//           let url = document.getElementById('url');
-//         });
-      </script>
       <style>
         button {
           background-color: #008CBA; 
@@ -19,9 +10,8 @@
         }
       </style>
     </head>
-    <body onload="myFunction()">
+    <body>
       <p1>Cookie Monsters</p1>
-      <p id = "urlid"></p>
       <button id="reviewButton"></button>
       <button id="analysisButton"></button>
       <script src="popup.js"></script>
